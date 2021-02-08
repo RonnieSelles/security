@@ -77,7 +77,7 @@
         height: auto;
     }
 
-    
+
 </style>
 
 <body>
@@ -89,6 +89,7 @@
             <li><a href="dashboard">Dashboard</a></li>
             <li><a href="faq">FAQ</a></li>
             <li><a href="motivation">Motivation</a></li>
+            <li><a href="show">Testing</a></li>
         </ul>
     </nav>
 
@@ -111,12 +112,12 @@
                     <ul class='inhoud'>
                         <li>
                             Het HBO past bij mij omdat ik het leuk vind om nieuwe dingen te leren en ik goed zelfstandig kan werken.
-                            Ook is het heel leuk om in groepen te werken en samen tot een oplossing te komen. 
+                            Ook is het heel leuk om in groepen te werken en samen tot een oplossing te komen.
                         </li>
                         <br>
                         <li>
                             Het programmeren zelf vind ik heel leuk omdat ik lekker creatief kan zijn en technisch bezig ben.
-                            
+
                         </li>
                     </ul>
                 </div>
