@@ -1,87 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layout')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Motivation | Ronnie Selles</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<style>
-    i{
-        color:red
-    }
-    #box-container1 {
-        display: flex;
-        flex-direction: row;
-        position: relative;
-        top: 10vh;
-        height: auto;
-        padding:5vh;
-    }
-
-    .box1 {
-        background-color: black;
-        border: 10px solid rgb(0, 0, 0);
-        flex: 33%;
-        align-content: center;
-        max-width: 100vw;
-        max-height: 80%;
-    }
-    #box-container2 {
-        display: flex;
-        flex-direction: row;
-        position: relative;
-        top:10vh;
-        height: auto;
-        padding:5vh;
-    }
-
-    .box2 {
-        background-color: black;
-        border: 10px solid rgb(0, 0, 0);
-        flex: 33%;
-        align-content: center;
-        max-width: 100vw;
-        max-height: 33vw;
-        
-    }
-    #box-container3 {
-        display: flex;
-        flex-direction: row;
-        position: relative;
-        top:10vh;
-        height: auto;
-        padding:5vh;
-    }
-
-    .box3 {
-        background-color: black;
-        border: 10px solid rgb(0, 0, 0);
-        flex: 33%;
-        align-content: center;
-        max-width: 100vw;
-        max-height: 33vw;
-        
-    }
-</style>
-
-<body>
-    <nav>
-        <ul>
-            <li><a href="/"><img id='home-icon' src="assets/home-icon.png"></a></li>
-            <li><a href="profile">Profile</a></li>
-            <li><a href="dashboard">Dashboard</a></li>
-            <li><a href="faq">FAQ</a></li>
-            <li><a id='current-page' href="motivation">Motivation</a></li>
-        </ul>
-    </nav>
+@section('content')
 
     <main>
         <div id="box-container1">
             <div class="box1">
               <ul>
-                <h1>   
+                <h1>
                     <li>Theory</li>
                 </h1>
                 <h4>
@@ -114,8 +39,8 @@
 
 
                 </h4>
-               
-                
+
+
               </ul>
             </div>
 
@@ -149,14 +74,14 @@
                         <li>Dit komt overeen met de intrinsieke motivatie van de eerdere test.</li>
                         <li>Creativiteit(18 punten)</li>
                         <li>Ik ben denk ik een creatief iemand dus ik vindt het heel fijn om ook eigen ideeën te kunnen toevoegen</li>
-                        <li>"Vaak werken creatieve mensen het liefst zelfstandig of in kleine teams." hier ben ik het ook helemaal mee eens.</li> 
+                        <li>"Vaak werken creatieve mensen het liefst zelfstandig of in kleine teams." hier ben ik het ook helemaal mee eens.</li>
                         <li>Sociale contacten(3 punten)</li>
                         <li>Het is niet dat ik sociale contacten helemaal niet belangrijk vindt. Ik vind het ook fijn dat het ook gezellig is</li>
                         <li>Ik vindt het ook leuker om in kleine groepjes te werken dan alleen. Ik vind dit echter niet het belangrijkste.</li>
                     </h4>
                 </ul>
             </div>
-            
+
         </div>
         </div>
         <div id="box-container3">
@@ -173,14 +98,66 @@
                         <li><a href= 'https://www.123test.nl/schein/'>123test.nl, (2020)</a></li>
                     </h4>
             </div>
-            
+
         </div>
         </div>
     </main>
+@endsection
+    <style>
+        i{
+            color:red
+        }
+        #box-container1 {
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            top: 10vh;
+            height: auto;
+            padding:5vh;
+        }
 
-    <footer>
-        <h5>© 2020 Ronnie Selles</h5>
-    </footer>
-</body>
+        .box1 {
+            background-color: black;
+            border: 10px solid rgb(0, 0, 0);
+            flex: 33%;
+            align-content: center;
+            max-width: 100vw;
+            max-height: 80%;
+        }
+        #box-container2 {
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            top:10vh;
+            height: auto;
+            padding:5vh;
+        }
 
-</html>
+        .box2 {
+            background-color: black;
+            border: 10px solid rgb(0, 0, 0);
+            flex: 33%;
+            align-content: center;
+            max-width: 100vw;
+            max-height: 33vw;
+
+        }
+        #box-container3 {
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            top:10vh;
+            height: auto;
+            padding:5vh;
+        }
+
+        .box3 {
+            background-color: black;
+            border: 10px solid rgb(0, 0, 0);
+            flex: 33%;
+            align-content: center;
+            max-width: 100vw;
+            max-height: 33vw;
+
+        }
+    </style>

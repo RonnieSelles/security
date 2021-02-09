@@ -1,155 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layout')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard | Ronnie Selles</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<style>
-    main {
-        height: 220vh;
-    }
-    /*tabel*/
-    #box-container1 {
-        display: flex;
-        flex-direction: row;
-        position: relative;
-        top: 10vh;
-        height: auto;
-        padding:5vh;
-    }
-    /*box around table*/
-    .box1 {
-        background-color: black;
-        border: 10px solid rgb(0, 0, 0);
-        flex: 33%;
-        align-content: center;
-        max-width: 100vw;
-        max-height: 80%;
-    }
-    /*table*/
-    #table {
-        font-size: 25px;
-        width: 100%;
-        height: 80%;
-        display: grid;
-        z-index: 2;
-        grid-template-columns: auto auto auto auto auto;
-        background: black;
-        grid-template-rows: 50px, 50px;
-    }
+@section('content')
 
-    #table>div {
-        padding: 20px 0;
-        border: 1px solid white; /*table border color*/
-        text-align: center;
-    }
 
-    /*table*/
-
-    /* quart 1*/
-    .quart1 {
-        grid-row-start: 2;
-        grid-row-end: 5;
-    }
-    /* quart 2*/
-    .quart2{
-        grid-row-start: 5;
-        grid-row-end: 8;
-    /* oop breder */
-    }
-    .oop{
-        grid-row-start: 5;
-        grid-row-end: 7; 
-    }
-    /*ec breder*/
-    .oop2{
-        grid-row-start: 5;
-        grid-row-end: 7; 
-    }
-    /*quart 3*/
-    /* framework project*/
-    .quart3{
-        grid-row-start:8 ;
-        grid-row-end: 15;  
-    }
-    .c33{
-        grid-row-start:8 ;
-        grid-row-end: 10;  
-    }
-    .c34{
-        grid-row-start:8 ;
-        grid-row-end: 10;  
-    }
-
-    /*prof skills 2*/
-    .c47{
-        grid-row-start:12 ;
-        grid-row-end: 15   ; 
-    }
-    .c48{
-        grid-row-start:12 ;
-        grid-row-end: 15   ; 
-    }
-
-    /*quart 4*/
-    .quart4{
-        grid-row-start:15 ;
-        grid-row-end: 20;  
-    }
-    .c65{
-        grid-row-start:17 ;
-        grid-row-end: 20;
-    }
-    .c66    {
-        grid-row-start:17 ;
-        grid-row-end: 20;
-    }
-
-    /* whenever*/
-    .c73{
-        grid-row-start:20 ;
-        grid-row-end: 22     ;
-    }
-
-    .total{
-        background-color:red;
-    }
-    
-
-    /*study guide*/
-    #box-container2 {
-        display: flex;
-        flex-direction: row;
-        position: relative;
-        top:40vh;
-        height: auto;
-        padding:5vh;
-    }
-
-    .box2 {
-        background-color: black;
-        border: 10px solid rgb(0, 0, 0);
-        flex: 33%;
-        align-content: center;
-        max-width: 100vw;
-        max-height: 33vw;
-        font-size: 40px;
-    }
-</style>
-
-<body>
-    <nav>
-        <ul>
-            <li><a href="/"><img id='home-icon' src="assets/home-icon.png"></a></li>
-            <li><a href="profile">Profile</a></li>
-            <li><a id='current-page' href="dashboard">Dashboard</a></li>
-            <li><a href="faq">FAQ</a></li>
-            <li><a href="motivation">Motivation</a></li>
-        </ul>
-    </nav>
 
     <main>
         <div id="box-container1">
@@ -274,14 +127,142 @@
                     <li><a href="" target="_blank"></a></li>
                 </ul>
             </div>
-            
+
         </div>
         </div>
     </main>
+@endsection
 
-    <footer>
-        <h5>© 2020 Ronnie Selles</h5>
-    </footer>
-</body>
 
-</html>
+    <style>
+        main {
+            height: 220vh;
+        }
+        /*tabel*/
+        #box-container1 {
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            top: 10vh;
+            height: auto;
+            padding:5vh;
+        }
+        /*box around table*/
+        .box1 {
+            background-color: black;
+            border: 10px solid rgb(0, 0, 0);
+            flex: 33%;
+            align-content: center;
+            max-width: 100vw;
+            max-height: 80%;
+        }
+        /*table*/
+        #table {
+            font-size: 25px;
+            width: 100%;
+            height: 80%;
+            display: grid;
+            z-index: 2;
+            grid-template-columns: auto auto auto auto auto;
+            background: black;
+            grid-template-rows: 50px, 50px;
+        }
+
+        #table>div {
+            padding: 20px 0;
+            border: 1px solid white; /*table border color*/
+            text-align: center;
+        }
+
+        /*table*/
+
+        /* quart 1*/
+        .quart1 {
+            grid-row-start: 2;
+            grid-row-end: 5;
+        }
+        /* quart 2*/
+        .quart2{
+            grid-row-start: 5;
+            grid-row-end: 8;
+            /* oop breder */
+        }
+        .oop{
+            grid-row-start: 5;
+            grid-row-end: 7;
+        }
+        /*ec breder*/
+        .oop2{
+            grid-row-start: 5;
+            grid-row-end: 7;
+        }
+        /*quart 3*/
+        /* framework project*/
+        .quart3{
+            grid-row-start:8 ;
+            grid-row-end: 15;
+        }
+        .c33{
+            grid-row-start:8 ;
+            grid-row-end: 10;
+        }
+        .c34{
+            grid-row-start:8 ;
+            grid-row-end: 10;
+        }
+
+        /*prof skills 2*/
+        .c47{
+            grid-row-start:12 ;
+            grid-row-end: 15   ;
+        }
+        .c48{
+            grid-row-start:12 ;
+            grid-row-end: 15   ;
+        }
+
+        /*quart 4*/
+        .quart4{
+            grid-row-start:15 ;
+            grid-row-end: 20;
+        }
+        .c65{
+            grid-row-start:17 ;
+            grid-row-end: 20;
+        }
+        .c66    {
+            grid-row-start:17 ;
+            grid-row-end: 20;
+        }
+
+        /* whenever*/
+        .c73{
+            grid-row-start:20 ;
+            grid-row-end: 22     ;
+        }
+
+        .total{
+            background-color:red;
+        }
+
+
+        /*study guide*/
+        #box-container2 {
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            top:40vh;
+            height: auto;
+            padding:5vh;
+        }
+
+        .box2 {
+            background-color: black;
+            border: 10px solid rgb(0, 0, 0);
+            flex: 33%;
+            align-content: center;
+            max-width: 100vw;
+            max-height: 33vw;
+            font-size: 40px;
+        }
+    </style>

@@ -1,12 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layout')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Ronnie Selles</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+@section('content')
+    <main>
+        <div id='background-image'>
+
+            <a id='go-down-button' href="#box-container">Go down</a>
+
+            <div id='welcome-text'>
+                <header>
+                    <h2>Ronnie Selles</h2>
+                </header>
+                <h5>Welcome!</h5>
+            </div>
+
+            <div id="box-container">
+                <div class="box"><img class='logos-main' src="assets/hz-logo.jpg"></div>
+                <div class="box">
+                    <ul class='inhoud'>
+                        <li>
+                            Het HBO past bij mij omdat ik het leuk vind om nieuwe dingen te leren en ik goed zelfstandig kan werken.
+                            Ook is het heel leuk om in groepen te werken en samen tot een oplossing te komen.
+                        </li>
+                        <br>
+                        <li>
+                            Het programmeren zelf vind ik heel leuk omdat ik lekker creatief kan zijn en technisch bezig ben.
+
+                        </li>
+                    </ul>
+                </div>
+                <div class='box'><img class='logos-main' src="assets/js-logo.png"></div>
+            </div>
+        </div>
+    </main>
+    @endsection
+
+
 <style>
     #welcome-text {
         text-align: center;
@@ -77,57 +105,4 @@
         height: auto;
     }
 
-
 </style>
-
-<body>
-
-    <nav>
-        <ul>
-            <li><a id='current-page' href="/"><img id='home-icon' src="assets/home-icon.png"></a></li>
-            <li><a href="profile">Profile</a></li>
-            <li><a href="dashboard">Dashboard</a></li>
-            <li><a href="faq">FAQ</a></li>
-            <li><a href="motivation">Motivation</a></li>
-            <li><a href="show">Testing</a></li>
-        </ul>
-    </nav>
-
-
-    <main>
-        <div id='background-image'>
-
-            <a id='go-down-button' href="#box-container">Go down</a>
-
-            <div id='welcome-text'>
-                <header>
-                    <h2>Ronnie Selles</h2>
-                </header>
-                <h5>Welcome!</h5>
-            </div>
-
-            <div id="box-container">
-                <div class="box"><img class='logos-main' src="assets/hz-logo.jpg"></div>
-                <div class="box">
-                    <ul class='inhoud'>
-                        <li>
-                            Het HBO past bij mij omdat ik het leuk vind om nieuwe dingen te leren en ik goed zelfstandig kan werken.
-                            Ook is het heel leuk om in groepen te werken en samen tot een oplossing te komen.
-                        </li>
-                        <br>
-                        <li>
-                            Het programmeren zelf vind ik heel leuk omdat ik lekker creatief kan zijn en technisch bezig ben.
-
-                        </li>
-                    </ul>
-                </div>
-                <div class='box'><img class='logos-main' src="assets/js-logo.png"></div>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <h5>© 2020 Ronnie Selles</h5>
-    </footer>
-</body>
-
-</html>
